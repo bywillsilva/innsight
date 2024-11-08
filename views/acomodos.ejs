@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhes da propriedade escolhida para sua estadia. Veja fotos, descrições, preços e faça sua reserva.">
+    <meta name="keywords" content="detalhes, hospedagem, reserva, casa, chalé, praia">
+    <meta name="author" content="Seu Nome ou Nome da Empresa">
+    <title>Detalhes da Propriedade</title>
+    <link rel="stylesheet" href="/details-style">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Hospedagem</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/acomodos">Acomodações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="property-details">
+            <div class="property-header">
+                <img src="https://via.placeholder.com/1200x600" alt="Casa de Praia em Paraty" class="property-image">
+            </div>
+
+            <div class="property-info">
+                <h2><%= propriedade[0].lugar %></h2>
+                <p class="property-location"><%= propriedade[0].subtitle %></p>
+                <p class="property-price">R$ <%= propriedade[0].preco %>/noite</p>
+            </div>
+
+            <section class="property-gallery">
+                <img src="https://via.placeholder.com/400x300" alt="Imagem 1">
+                <img src="https://via.placeholder.com/400x300" alt="Imagem 2">
+                <img src="https://via.placeholder.com/400x300" alt="Imagem 3">
+            </section>
+
+            <section class="property-description">
+                <h3>Descrição da Propriedade</h3>
+                <p><%= propriedade.descricao %></p>
+            </section>
+
+            <section class="property-details">
+                <h3>Detalhes da Propriedade</h3>
+                <ul>
+                    <li><strong>Quartos:</strong> <%= propriedade[0].quartos %></li>
+                    <li><strong>Banheiros:</strong> <%= propriedade[0].banheiros %></li>
+                    <li><strong>Piscina:</strong> <%= propriedade[0].piscina ? 'Sim' : 'Não' %></li>
+
+                </ul>
+            </section>
+
+            <section class="reservation-form">
+                <h3>Faça sua Reserva</h3>
+                <form action="#">
+                    <label for="checkin-date">Data de Check-in:</label>
+                    <input type="date" id="checkin-date" name="checkin-date" required>
+
+                    <label for="checkout-date">Data de Check-out:</label>
+                    <input type="date" id="checkout-date" name="checkout-date" required>
+
+                    <button type="submit">Reservar Agora</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hospedagem & Reservas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
