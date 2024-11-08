@@ -17,6 +17,10 @@ Em seguida para iniciar o servidor:
 
 ``` npm run dev ```
 
+Crie um documento .env e coloque as informações de variáveis de ambiente que apenas os chegados têm.
+
+``` .env ```
+
 ## Pronto, seu projeto já está funcionando
 
 # Como posso contribuir ? 
