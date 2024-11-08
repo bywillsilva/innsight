@@ -8,12 +8,13 @@ const db = mysql.createPool({
     waitForConnections: true,
 });
 
-db.connect((err) => {
+db.getConnection((err, connection) => {
     if (err) {
-        console.log('Erro de conexão com o banco', err);
-        return;
+        console.error('Erro de conexão com o banco:', err);
+        process.exit(1);  // Finaliza o processo se não conseguir se conectar ao banco
+    } else {
+        console.log('Conectado ao db');
     }
-    console.log('Conectado ao db');
-})
+});
 
 module.exports = db;
