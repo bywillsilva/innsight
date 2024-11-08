@@ -1,10 +1,11 @@
 const mysql = require('mysql2');
 
-const db = mysql.createConnection({
-    host: '193.203.175.121',     // Host fornecido pela Hostinger
-    user: 'u244612010_admin_innsight',          // Usuário do banco de dados
-    password: 'Innsight12@',     // Senha do banco de dados
-    database: 'u244612010_innsight' // Nome do banco de dados
+const db = mysql.createPool({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    waitForConnections: true,
 });
 
 db.connect((err) => {
