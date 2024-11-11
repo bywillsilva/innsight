@@ -1,0 +1,81 @@
+/* Estilo do formulário de login */
+.login-form {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff5a5f; /* Cor de borda ao focar */
+}
+
+.cta-button {
+    background-color: #ff5a5f; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 12px 30px; /* Espaçamento interno */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    width: 100%;
+}
+
+.cta-button:hover {
+    background-color: #ff4a4f; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de leve movimentação */
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link p {
+    font-size: 1rem;
+}
+
+.signup-link a {
+    color: #ff5a5f;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}

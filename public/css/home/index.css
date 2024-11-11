@@ -15,12 +15,22 @@ header {
     background-color: #ff5a5f;
     color: white;
     padding: 20px 0;
-    text-align: center;
 }
 
 header .logo h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul {
+    list-style: none;
 }
 
 /* Seção de Busca */

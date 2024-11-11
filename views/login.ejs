@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acesse sua conta e aproveite as melhores opções de hospedagem para sua viagem.">
+    <meta name="keywords" content="login, acesso, conta, hospedagem, reservas, login usuário">
+    <meta name="author" content="Seu Nome ou Nome da Empresa">
+    <title>Login - Hospedagem</title>
+    <link rel="stylesheet" href="/home-style">
+    <link rel="stylesheet" href="/login-style">
+</head>
+<body>
+    <main>
+        <section class="login-form">
+            <div class="form-container">
+                <h2>Entrar na sua conta</h2>
+                <form action="/login" method="POST">
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit" class="cta-button" id="btn_login">Entrar</button>
+                </form>
+                <div class="signup-link">
+                    <p>Não tem uma conta? <a href="/register">Registre-se</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/login-js"></script>
+</body>
+</html>

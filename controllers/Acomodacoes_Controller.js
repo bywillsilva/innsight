@@ -15,10 +15,11 @@ const getFilter = async (req, res) => {
 
 const getAcomodacoes = async (req, res) => {
     const query = 'SELECT * FROM Acomodacoes';
+    const user = req.session.user;
 
     try {
         const [results] = await db.promise().query(query);
-        res.render('index', { acomodacoes: results });
+        res.render('index', { acomodacoes: results, user: user });
     } catch (err) {
         console.error('Erro ao executar consulta:', err);
         res.status(500).send('Erro ao buscar dados');

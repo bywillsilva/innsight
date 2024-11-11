@@ -15,6 +15,15 @@
         <div class="logo">
             <h1>Hospedagem</h1>
         </div>
+        <nav>
+            <ul>
+                <% if (user) { %> 
+                    <li><a href="/logout">Logout</a></li>  <!-- Link para Logout -->
+                <% } else { %>
+                    <li><a href="./login">Login</a></li>  <!-- Link para Login -->
+                <% } %>
+            </ul>
+        </nav>
     </header>
 
     <!-- Conteúdo Principal -->
